@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 void countOfEven(int list[]){
@@ -15,12 +16,14 @@ int count = 0;
 //////////////////////////////////////////////////////////////////////////////
 
 int main() {
-    int list1[10] = {10,31,5,7,11,3,8,40,12,4};
-    countOfEven(list1);
-    
-/////////////////////////////////////////////////////////////////////////////
-    int list2[10] = {19,2,3,7,5,10,9,0,6,1};
-    countOfEven(list2);
-    
+    int i = 0 ;
+    int list[10];
+    for(i= 0 ; i < 10 ; i++){
+        int val ;
+        scanf("%d", &val);
+        list[i] = val;
+    }
+    //list1: 10,31,5,7,11,3,8,40,12,4
+    countOfEven(list);
     return 0;
 }
